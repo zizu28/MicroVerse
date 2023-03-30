@@ -6,3 +6,11 @@ body{
 .section{
   margin-top: 4px;
 }
+
+.radiobuttons{
+  margin-top: 5px;
+}
+
+.box{
+  box-shadow: 2px 2px rgb(0,0,0)
+}
