@@ -7,9 +7,43 @@
   </head>
 
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <h1 id="title">University Survey Form</h1>
+    <p id="description">Thank you for taking this survey of the university curriculum</p>
+    <fieldset>
+    <form id="survey-form">
+      <div class="section">
+      <label for="name" id="name-label">Name: <input id="name" type="text" placeholder="Your Name" required></label>
+      </div>
+      <div class="section">
+      <label for="email" id="email-label">Email: <input id="email" type="email" placeholder="Your Email" required></label>
+      </div>
+      <div class="section">
+        <label for="number" id="number-label">Number of courses you took: <input type="number" id="number" min="0" max="100" placeholder="0 to 100" value="0"></label>
+      </div>
+      <div>
+        <label for="dropdown">What is your major?
+        <select id="dropdown" class="section">
+          <option>(select one)</option>
+          <option>Communication</option>
+          <option>Electronics</option>
+          <option>Biomedical</option>
+          <option>Modern Art</option>
+        </select>
+        </label>
+      </div>
+      <div class="radiobuttons" class="section">
+        <label for="gender">What is your gender?</label>
+        <br>
+        <label>Male<input type="radio" name="gender" value="1"></label>
+        <label>Female<input type="radio" name="gender" value="2"></label>
+        <label>Other<input type="radio" name="gender" value="3"></label>
+      </div>
+      </fieldset>
+      </form>
+    
+    <!---<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <p>Hello World, we are software developers!</p>
-    <script  src="js/index.js"></script>
+    <script  src="js/index.js"></script>-->
   </body>
 </html>
